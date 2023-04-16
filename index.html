@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="FYHenry@github.com"/>
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg"/>
+    <link rel="icon" type="image/svg+xml" href="./svg/favicon.svg"/>
     <title>Paris.fr, faux site officiel de la Ville de Paris</title>
     <meta name="description"
       content="Retrouvez tous les services et démarches, les infos pratiques, les actualités et événements de la Ville de Paris."/>
@@ -19,41 +19,141 @@
   <body class="text-dark bg-light">
     <header class="d-inline-flex w-100">
       <picture class="p-1">
-        <img src="./logo.svg" alt="" role="img"/>
+        <img src="./svg/logo.svg" alt="" role="img"/>
       </picture>
       <nav>
-        <ul class="d-inline-flex p-2">
+        <menu class="d-inline-flex p-2">
           <li class="p-1">Services</li>
           <li class="p-1">Municipalité</li>
           <li class="p-1">Participez!</li>
           <li class="p-1">Que faire à Paris ?</li>
           <li class="p-1">Jeux 2024</li>
-        </ul>
+        </menu>
       </nav>
     </header>
     <main class="d-inline-flex justify-content-between p-2 w-100">
-      <aside class="d-inline-flex flex-column justify-content-start p-2">
+      <h1></h1>
+      <article class="d-inline-flex flex-column justify-content-start p-2">
         <section class="p-2 h-10">
+          <h3>Accès rapides</h3>
+          <div class="d-inline-flex flex-column justify-content-between p-2">
+            <p>PISCINES</p>
+            <p>PARCS, JARDINS ET BOIS</p>
+            <p>MAIRIES D’ARRONDISSEMENT</p>
+            <p>BIBLIOTHÈQUES</p>
+            <p>Voir la carte</p>
+          </div>
         </section>
         <section class="p-2 h-10">
+          <p>Carte d’identité / Passeport</p>
+          <p>Travailler à Paris</p>
+          <p>Stationnement résidentiel</p>
+          <p>Encombrants</p>
+          <p>Services en ligne</p>
+          <p>Facil’Familles</p>
+          <p>État civil</p>
+          <p>Signaler une anomalie avec DansMaRue</p>
+          <p>S’installer à Paris</p>
+          <p>Logement: prise de RDV en ligne</p>
         </section>
         <section class="p-2 h-10">
+          <h4>Qualité de l’air</h4>
         </section>
         <section class="p-2 h-10">
+          <h4>Vous êtes…</h4>
+          <p>Professionnel</p>
+          <p>Association</p>
+          <p>Jeune</p>
         </section>
-      </aside>
+      </article>
       <article class="d-inline-flex p-2">
       </article>
-      <aside class="d-inline-flex p-2">
-        <section>
+      <article class="d-inline-flex flex-column justify-content-start p-2">
+        <section class="p-2 h-10">
+          <p><h3>08h00 · Le saviez-vous ?</h3>Le 16 avril 1650, l'institution de l'Oratoire est fondée rue des Charbonniers, sur l'actuelle avenue Denfert-Rochereau. Plus tard, l'institution et son noviciat deviennent l'hôpital Saint-Vincent-de-Paul. Après avoir accueilli les Grands Voisins, le site est maintenant en travaux pour devenir un écoquartier avec des logements et des commerces.
+En savoir + </p>
         </section>
-        <section>
+        <section class="p-2 h-10">
+          <p><h3>08h00 · Le saviez-vous ?</h3>Le 15 avril 1980, Jean-Paul Sartre meurt à Paris, où il a résidé toute sa vie. Écrivain et philosophe emblématique du courant existentialiste, Sartre participe activement aux événements de mai 1968. Il partagera jusqu'à sa mort la vie de Simone de Beauvoir, avec qui il formait un célèbre couple de la vie intellectuelle parisienne.</p>
         </section>
-      </aside>
+        <section class="p-2 h-10">
+          <p><h3>16h00 · Culture.</h3> Claire Bretécher, autrice de bande-dessinées et maman d'Agrippine, donne son nom à la bibliothèque municipale Lancry. Inauguration samedi 15 avril.</p>
+        </section>
+      </article>
     </main>
-    <footer>
+    <footer class="d-inline-flex flex-row justify-content-start w-100">
+      <div class="d-inline-flex flex-column justify-content-between w-50">
+        <article class="d-inline-flex justify-content-center p-2 flex-grow-1">
+          <picture class="p-1">
+            <img src="./svg/logo.svg" alt="" role="img"/>
+          </picture>
+          <select name="arrondissement">
+            <option value="0" default>Les Mairies</option>
+            <option value="0">Mairie de Paris Centre</option>
+            <option value="0">Mairie du 5<sup>e</sup> arrondissement</option>
+            <option value="0">Mairie du 6<sup>e</sup> arrondissement</option>
+            <option value="0">Mairie du 7<sup>e</sup> arrondissement</option>
+            <option value="0">Mairie du 8<sup>e</sup> arrondissement</option>
+            <option value="0">Mairie du 9<sup>e</sup> arrondissement</option>
+            <option value="0">Mairie du 10<sup>e</sup> arrondissement</option>
+            <option value="0">Mairie du 11<sup>e</sup> arrondissement</option>
+            <option value="0">Mairie du 12<sup>e</sup> arrondissement</option>
+            <option value="0">Mairie du 13<sup>e</sup> arrondissement</option>
+          <select>
+        </article>
+        <article class="d-inline-flex justify-content-between p-2 flex-grow-1">
+          <section>
+            <p>Visit Paris</p>
+            <p>TOURIST OFFICE</p>
+          </section>
+          <section>
+            <p>Open Data</p>
+            <p>EN SAVOIR+</p>
+          </section>
+            <p>Démarches</p>
+            <p>SERVICES EN LIGNE</p>
+          <section>
+          </section>
+        </article >
+        <article class="d-inline-flex justify-content-between p-2 flex-grow-1">
+          <nav>
+            <menu class="d-inline-flex p-2">
+              <li class="p-1">CONTACT</li>
+              <li class="p-1">PRESSE</li>
+              <li class="p-1">MENTIONS LÉGALES</li>
+              <li class="p-1">ACCESSIBILITÉ</li>
+              <li class="p-1">POLITIQUE DE COOKIES</li>
+              <li class="p-1">PLAN DU SITE</li>
+            </menu>
+          </nav>
+        </article>
+      </div>
+      <div class="d-inline-flex flex-column justify-content-between w-50">
+        <section class="d-inline-flex flex-column justify-content-between w-50">
+          <form class="align-items-end">
+            <label>
+              <p>Recevez chaque semaine l'actualité de votre ville</p>
+              <input type="email" name="email" placeholder="Votre email" required/>
+              <input type="button" name="button" value="S’abonner"/>
+            </label>
+          </form>
+        </section>
+        <section class="d-inline-flex flex-column justify-content-between w-50">
+          <p>Suivez-nous sur les réseaux sociaux</p>
+          <nav>
+            <ul class="d-inline-flex p-2">
+              <li class="p-1"><img src="./svg/facebook_logo.svg" alt="" role="img"/></li>
+              <li class="p-1"><img src="./svg/twitter_logo.svg" alt="" role="img"/></li>
+              <li class="p-1"><img src="./svg/instagram_logo.svg" alt="" role="img"/></li>
+              <li class="p-1"><img src="./svg/linkedin_logo.svg" alt="" role="img"/></li>
+              <li class="p-1"><img src="./svg/youtube_logo.svg" alt="" role="img"/></li>
+            </ul>
+          </nav>
+        </section>
+        <section class="d-inline-flex flex-column justify-content-between w-50">
+        </section>
+      </div>
       
-
     </footer>
     <!--/script href="index.js" type="application/javascript"/-->
     <!--script type="module">

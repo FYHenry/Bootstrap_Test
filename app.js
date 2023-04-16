@@ -8,6 +8,7 @@ const PORT = 3000;
 function requestResponder(req, res)
 {
   const PATH = url.parse(req.url).pathname;
+  //const HOST = url.parse(req.url).host;
   switch (PATH)
   {
   case '/':
@@ -26,15 +27,45 @@ function requestResponder(req, res)
     res.setHeader('Content-Type', 'text/css; charset=utf-8');
     fs.createReadStream('./reset.css').pipe(res);
     break;
-  case '/favicon.svg':
+  case '/svg/favicon.svg':
     res.statusCode = 200;
     res.setHeader('Content-Type', 'image/svg+xml; charset=utf-8');
-    fs.createReadStream('./favicon.svg').pipe(res);
+    fs.createReadStream('./svg/favicon.svg').pipe(res);
     break;
-  case '/logo.svg':
+  case '/svg/logo.svg':
     res.statusCode = 200;
     res.setHeader('Content-Type', 'image/svg+xml; charset=utf-8');
-    fs.createReadStream('./logo.svg').pipe(res);
+    fs.createReadStream('./svg/logo.svg').pipe(res);
+    break;
+  case '/svg/facebook_logo.svg':
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'image/svg+xml; charset=utf-8');
+    fs.createReadStream('./svg/facebook_logo.svg').pipe(res);
+    break;
+  case '/svg/twitter_logo.svg':
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'image/svg+xml; charset=utf-8');
+    fs.createReadStream('./svg/twitter_logo.svg').pipe(res);
+    break;
+  case '/svg/instagram_logo.svg':
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'image/svg+xml; charset=utf-8');
+    fs.createReadStream('./svg/instagram_logo.svg').pipe(res);
+    break;
+  case '/svg/linkedin_logo.svg':
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'image/svg+xml; charset=utf-8');
+    fs.createReadStream('./svg/linkedin_logo.svg').pipe(res);
+    break;
+  case '/svg/youtube_logo.svg':
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'image/svg+xml; charset=utf-8');
+    fs.createReadStream('./svg/youtube_logo.svg').pipe(res);
+    break;
+  case '/svg/jauge.svg':
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'image/svg+xml; charset=utf-8');
+    fs.createReadStream('./svg/jauge.svg').pipe(res);
     break;
   default:
     res.statusCode = 404;

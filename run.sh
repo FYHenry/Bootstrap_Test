@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
-echo '//# sourceMappingURL=main.js.map' > index.css
-echo "" >> index.css
-sass index.scss >> index.css
+sass index.scss index.css
+#echo '//# sourceMappingURL=index.css.map' > css/tmp.css
+#cp css/index.css css/tmpbis.css
+#cat css/tmp.css css/tmpbis.css > css/index.css
+#rm css/tmp.css css/tmpbis.css
 node app.js
