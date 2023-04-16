@@ -1,12 +1,9 @@
 const http = require('http');
 const fs = require('fs');
 const url = require('url');
-const bootstrap = require('bootstrap');
+//const bootstrap = require('bootstrap');
 const HOSTNAME = '127.0.0.1';
 const PORT = 3000;
-
-//const indexHtml = fs.open('./index.http', (err, fd) => {});
-//const indexCss = fs.open('./index.css', (err, fd) => {});
 
 function requestResponder(req, res)
 {
@@ -23,6 +20,21 @@ function requestResponder(req, res)
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/css; charset=utf-8');
     fs.createReadStream('./index.css').pipe(res);
+    break;
+  case '/reset.css':
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/css; charset=utf-8');
+    fs.createReadStream('./reset.css').pipe(res);
+    break;
+  case '/favicon.svg':
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'image/svg+xml; charset=utf-8');
+    fs.createReadStream('./favicon.svg').pipe(res);
+    break;
+  case '/logo.svg':
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'image/svg+xml; charset=utf-8');
+    fs.createReadStream('./logo.svg').pipe(res);
     break;
   default:
     res.statusCode = 404;
