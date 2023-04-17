@@ -1,2 +1,12 @@
 @use 'node_modules/bootstrap/scss/bootstrap' as bt;
 
+body
+{
+  picture
+  {
+    img
+    {
+      object-fit: scale-down;
+    }
+  }
+}

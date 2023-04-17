@@ -9,31 +9,47 @@
     <title>Paris.fr, faux site officiel de la Ville de Paris</title>
     <meta name="description"
       content="Retrouvez tous les services et démarches, les infos pratiques, les actualités et événements de la Ville de Paris."/>
-    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"-->
     <link href="./reset.css" rel="stylesheet"/>
+    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+      crossorigin="anonymous"-->
     <link href="./index.css" rel="stylesheet"/>
   </head>
   <body class="text-dark bg-light">
     <header class="d-inline-flex w-100">
-      <picture class="p-1">
+      <picture class="p-1 align-items-stretch">
         <img src="./svg/logo.svg" alt="" role="img"/>
       </picture>
       <nav>
         <menu class="d-inline-flex p-2">
-          <li class="p-1">Services</li>
-          <li class="p-1">Municipalité</li>
-          <li class="p-1">Participez!</li>
-          <li class="p-1">Que faire à Paris ?</li>
-          <li class="p-1">Jeux 2024</li>
+          <li class="p-1">
+            <button name="headnav0">Services</button>
+          </li>
+          <li class="p-1">
+            <button name="headnav1">Municipalité</button>
+          </li>
+          <li class="p-1">
+            <button name="headnav2">Participez!</button>
+          </li>
+          <li class="p-1">
+            <button name="headnav3">Que faire à Paris ?</button>
+          </li>
+          <li class="p-1">
+            <button name="headnav4">Jeux 2024</button>
+          </li>
         </menu>
       </nav>
+      <button class="p-1 align-items-stretch" name="recherche">Recherche</button>
+      <button class="p-1 align-items-stretch ms-auto" name="monparis">Mon Paris</button>
     </header>
     <main class="d-inline-flex justify-content-between p-2 w-100">
+    <!------------------------------------------------------------------------->
+    <!---------------------     Colonne 1     --------------------------------->
+    <!------------------------------------------------------------------------->
       <h1></h1>
       <article class="d-inline-flex flex-column justify-content-start p-2">
+        <h2></h2>
         <section class="p-2 h-10">
           <h3>Accès rapides</h3>
           <div class="d-inline-flex flex-column justify-content-between p-2">
@@ -57,18 +73,118 @@
           <p>Logement: prise de RDV en ligne</p>
         </section>
         <section class="p-2 h-10">
-          <h4>Qualité de l’air</h4>
+          <h3>Qualité de l’air</h3>
         </section>
         <section class="p-2 h-10">
-          <h4>Vous êtes…</h4>
+          <h3>Vous êtes…</h3>
           <p>Professionnel</p>
           <p>Association</p>
           <p>Jeune</p>
         </section>
       </article>
-      <article class="d-inline-flex p-2">
+    <!------------------------------------------------------------------------->
+    <!---------------------     Colonne 2     --------------------------------->
+    <!------------------------------------------------------------------------->
+      <article class="d-inline-flex flex-column justify-content-start w-25 p-2">
+        <h2></h2>
+        <article>
+          <picture>
+            <img class="p-1 img-fluid" src="https://cdn.paris.fr/paris/2022/05/18/large-2e27f25ebaa1dce9f0301a54df4f3833.jpg" alt="" role="img"/>
+          </picture>
+          <h3>Covoiturage et transports collectifs sur une voie du périphérique : donnez votre avis !</h3>
+          <p>Les Franciliens et les usagers et riverains du boulevard périphérique pourront se prononcer sur les modalités du projet de voie dédiée au covoiturage …</p>
+        </article>
+        <div class="d-inline-flex flex-row justify-content-between p-2">
+          <article>
+            <picture>
+              <img class="p-1 img-fluid" src="https://cdn.paris.fr/paris/2019/10/17/large-4bad336ee7b9207cc5752b65ead9aa69.jpg" alt="" role="img"/>
+            </picture>
+            <h3>Dans les coulisses du périphérique</h3>
+          </article>
+          <article>
+            <picture>
+              <img class="p-1 img-fluid" src="https://cdn.paris.fr/paris/2023/02/17/large-6e1fac8120303b8071ad787f7ff74dc3.jpg" alt="" role="img"/>
+            </picture>
+            <h3>Expos, loisirs… tous les bons plans de la semaine</h3>
+          </article>
+        </div>
+        <article>
+          <picture>
+            <img class="p-1 img-fluid" src="https://cdn.paris.fr/paris/2023/04/06/large-5b5651328a03940b2767062bbbb97314.jpg" alt="" role="img"/>
+          </picture>
+          <h3>Îlot fertile, le premier quartier zéro carbone de Paris</h3>
+        </article>
+        <div class="d-inline-flex flex-row justify-content-between p-2">
+          <article>
+            <picture>
+              <img class="p-1 img-fluid" src="https://cdn.paris.fr/paris/2023/04/14/large-4a96fd844ef7a019b08c392b7950dfc0.jpg" alt="" role="img"/>
+            </picture>
+            <h3>Avec RueWATT, les arts du cirque et de la rue prennent la lumière</h3>
+          </article>
+          <article>
+            <picture>
+              <img class="p-1 img-fluid" src="https://cdn.paris.fr/paris/2023/04/05/large-5fae3a6f71bd7950e87db5b17f8ea48a.jpg" alt="" role="img"/>
+            </picture>
+            <h3>Avec CoprOasis, votre copropriété se met au vert… et au frais !</h3>
+          </article>
+        </div>
+        <article>
+          <picture>
+            <img class="p-1 img-fluid" src="https://cdn.paris.fr/paris/2023/04/06/large-5b5651328a03940b2767062bbbb97314.jpg" alt="" role="img"/>
+          </picture>
+          <h3>Îlot fertile, le premier quartier zéro carbone de Paris</h3>
+        </article>
+        <section class="d-inline-flex flex-column justify-content-between w-100">
+          <h3></h3>
+          <form class="align-items-end">
+            <label>
+              <p>Recevez chaque semaine l'actualité de votre ville</p>
+              <input type="email" name="email" placeholder="Votre email" required/>
+              <input type="button" name="button" value="S’abonner"/>
+            </label>
+          </form>
+        </section>
+        <section class="d-inline-flex flex-column justify-content-between w-100">
+          <nav>
+            <ul class="d-inline-flex p-2">
+              <li class="p-1"><img src="./svg/facebook_logo.svg" alt="" role="img"/></li>
+              <li class="p-1"><img src="./svg/twitter_logo.svg" alt="" role="img"/></li>
+              <li class="p-1"><img src="./svg/instagram_logo.svg" alt="" role="img"/></li>
+              <li class="p-1"><img src="./svg/linkedin_logo.svg" alt="" role="img"/></li>
+              <li class="p-1"><img src="./svg/youtube_logo.svg" alt="" role="img"/></li>
+            </ul>
+          </nav>
+        </section>
+        <article>
+          <picture>
+            <img class="p-1 img-fluid" src="https://cdn.paris.fr/paris/2023/04/06/large-5b5651328a03940b2767062bbbb97314.jpg" alt="" role="img"/>
+          </picture>
+          <h3>Îlot fertile, le premier quartier zéro carbone de Paris</h3>
+        </article>
+        <article>
+          <picture>
+            <img class="p-1 img-fluid" src="https://cdn.paris.fr/paris/2023/04/06/large-5b5651328a03940b2767062bbbb97314.jpg" alt="" role="img"/>
+          </picture>
+          <h3>Îlot fertile, le premier quartier zéro carbone de Paris</h3>
+        </article>
       </article>
-      <article class="d-inline-flex flex-column justify-content-start p-2">
+    <!------------------------------------------------------------------------->
+    <!---------------------     Colonne 3     --------------------------------->
+    <!------------------------------------------------------------------------->
+      <article class="d-inline-flex flex-column justify-content-start w-25 p-2">
+        <section class="p-2 h-10">
+          <p><h3>14h00 · Emploi</h3>Vous êtes titulaire d'un bac+2 et souhaitez travailler au sein du service de l'arbre et des bois de la Ville de Paris ? Un recrutement de 5 encadrants ou experts sylvicoles est organisé par voie de concours. Les inscriptions sont ouvertes jusqu'au 12 mai 2023.</p>
+          <picture>
+          <a>En savoir +</a>
+            <img class="p-1 img-fluid" src="https://cdn.paris.fr/paris/2021/05/05/large-e5ce32476f6e756d34774f4b53f69d7e.jpg" alt="" role="img"/>
+          </picture>
+        </section>
+        <section class="p-2 h-10">
+          <p><h3>08h00 · Le saviez-vous ?</h3>Le 15 avril 1980, Jean-Paul Sartre meurt à Paris, où il a résidé toute sa vie. Écrivain et philosophe emblématique du courant existentialiste, Sartre participe activement aux événements de mai 1968. Il partagera jusqu'à sa mort la vie de Simone de Beauvoir, avec qui il formait un célèbre couple de la vie intellectuelle parisienne.</p>
+        </section>
+        <section class="p-2 h-10">
+          <p><h3>16h00 · Culture.</h3> Claire Bretécher, autrice de bande-dessinées et maman d'Agrippine, donne son nom à la bibliothèque municipale Lancry. Inauguration samedi 15 avril.</p>
+        </section>
         <section class="p-2 h-10">
           <p><h3>08h00 · Le saviez-vous ?</h3>Le 16 avril 1650, l'institution de l'Oratoire est fondée rue des Charbonniers, sur l'actuelle avenue Denfert-Rochereau. Plus tard, l'institution et son noviciat deviennent l'hôpital Saint-Vincent-de-Paul. Après avoir accueilli les Grands Voisins, le site est maintenant en travaux pour devenir un écoquartier avec des logements et des commerces.
 En savoir + </p>
@@ -153,12 +269,10 @@ En savoir + </p>
         <section class="d-inline-flex flex-column justify-content-between w-50">
         </section>
       </div>
-      
     </footer>
-    <!--/script href="index.js" type="application/javascript"/-->
-    <!--script type="module">
-      import * as bootstrap from 'bootstrap'
-      new bootstrap.Popover(document.getElementById('popoverButton'))
+    <!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+      crossorigin="anonymous">
     </script-->
   </body>
 </html>

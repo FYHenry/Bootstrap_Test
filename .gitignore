@@ -136,7 +136,9 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-###############
-## Bootstrap ##
-###############
+###########
+## Autre ##
+###########
+
+cp-img.sh
 
